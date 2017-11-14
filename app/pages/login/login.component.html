@@ -1,0 +1,19 @@
+<ActionBar title='Login' class='action-bar'></ActionBar>
+<StackLayout>
+  <TextField hint='Email Address'
+             keyboardType='email'
+             [(ngModel)]='user.email'
+             autocorrect='false'
+             autocapitalizationType='none'>
+  </TextField>
+
+  <TextField hint='Password'
+             secure='true'
+             [(ngModel)]='user.password'>
+  </TextField>
+
+  <Button text='Log In'
+          class='submit-button'
+          (tap)='submit()'>
+  </Button>
+</StackLayout>
